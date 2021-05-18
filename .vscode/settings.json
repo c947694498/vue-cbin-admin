@@ -1,0 +1,5 @@
+{
+  "vetur.experimental.templateInterpolationService": true,
+  "volar.tsPlugin": true,
+  "typescript.tsdk": "node_modules/typescript/lib"
+}
