@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "target": "esnext",
     "module": "esnext",
     "moduleResolution": "node",
@@ -10,13 +11,24 @@
     "esModuleInterop": true,
     "lib": ["esnext", "dom"],
     "types": ["vite/client"],
-    "typeRoots": ["./node_modules/@types/","./types/"],
+    "typeRoots": ["./node_modules/@types/", "./typings"],
     "paths": {
       "/@/*": ["src/*"],
-      "/#/*": ["types/*"]
-    },
+      "/#/*": ["typings/*"]
+    }
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "typings/**/*.ts",
+    "typings/**/*.d.ts",
+    "mock/**/*.ts",
+    "mock/**/*.d.ts",
+    "build/**/*.ts",
+    "build/**/*.d.ts"
+  ],
   "exclude": ["node_modules", "dist"],
   "plugins": []
 }
