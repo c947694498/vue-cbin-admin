@@ -27,7 +27,8 @@
     "mock/**/*.ts",
     "mock/**/*.d.ts",
     "build/**/*.ts",
-    "build/**/*.d.ts"
+    "build/**/*.d.ts",
+    "vite.config.ts"
   ],
   "exclude": ["node_modules", "dist"],
   "plugins": []

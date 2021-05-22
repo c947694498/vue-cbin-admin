@@ -1,6 +1,7 @@
 import { resolve } from 'path'
-import { defineConfig } from 'vite'
+import { ConfigEnv, defineConfig } from 'vite'
 import { createVitePlugins } from './build/vite/plugins'
+import { readEnv } from './build/vite/utils/readEnv';
 
 const pathResolve = (dir: string): any => {
   return resolve(__dirname, ".", dir);
@@ -13,9 +14,15 @@ const alias: Record<string, string> = {
 };
 
 // https://vitejs.dev/config/
-export default defineConfig({
-  resolve: {
-    alias,
-  },
-  plugins: createVitePlugins(),
+export default (({command, mode}: ConfigEnv) => {
+  const env = readEnv(mode);
+  
+  return defineConfig({
+    base: env.VITE_BASE,
+    resolve: {
+      alias,
+    },
+    plugins: createVitePlugins(),
+  })
 })
+

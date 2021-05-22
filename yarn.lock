@@ -213,7 +213,7 @@
     "chalk" "^2.0.0"
     "js-tokens" "^4.0.0"
 
-"@babel/parser@^7.12.0", "@babel/parser@^7.12.13", "@babel/parser@^7.13.9", "@babel/parser@^7.14.2", "@babel/parser@^7.14.3":
+"@babel/parser@^7.1.0", "@babel/parser@^7.12.0", "@babel/parser@^7.12.13", "@babel/parser@^7.13.9", "@babel/parser@^7.14.2", "@babel/parser@^7.14.3":
   "integrity" "sha1-m1MO7LBx/QyTUZ3yXF/58UdZ8pg="
   "resolved" "https://registry.nlark.com/@babel/parser/download/@babel/parser-7.14.3.tgz?cache=0&sync_timestamp=1621284389691&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40babel%2Fparser%2Fdownload%2F%40babel%2Fparser-7.14.3.tgz"
   "version" "7.14.3"
@@ -278,7 +278,7 @@
     "debug" "^4.1.0"
     "globals" "^11.1.0"
 
-"@babel/types@^7.0.0", "@babel/types@^7.12.0", "@babel/types@^7.12.13", "@babel/types@^7.13.0", "@babel/types@^7.13.12", "@babel/types@^7.14.0", "@babel/types@^7.14.2":
+"@babel/types@^7.0.0", "@babel/types@^7.12.0", "@babel/types@^7.12.13", "@babel/types@^7.13.0", "@babel/types@^7.13.12", "@babel/types@^7.14.0", "@babel/types@^7.14.2", "@babel/types@^7.3.0":
   "integrity" "sha1-QgiuADEH74oFfqgzPlbrZNL2osM="
   "resolved" "https://registry.nlark.com/@babel/types/download/@babel/types-7.14.2.tgz"
   "version" "7.14.2"
@@ -306,6 +306,44 @@
   dependencies:
     "core-js" "^3.12.1"
     "nanopop" "^2.1.0"
+
+"@types/babel__core@^7.1.14":
+  "integrity" "sha1-+q7vxBhexxw4n0UB7l7ISxcMxAI="
+  "resolved" "https://registry.nlark.com/@types/babel__core/download/@types/babel__core-7.1.14.tgz"
+  "version" "7.1.14"
+  dependencies:
+    "@babel/parser" "^7.1.0"
+    "@babel/types" "^7.0.0"
+    "@types/babel__generator" "*"
+    "@types/babel__template" "*"
+    "@types/babel__traverse" "*"
+
+"@types/babel__generator@*":
+  "integrity" "sha1-89cReOGHhY98ReMDgPjxt0FaEtg="
+  "resolved" "https://registry.nlark.com/@types/babel__generator/download/@types/babel__generator-7.6.2.tgz"
+  "version" "7.6.2"
+  dependencies:
+    "@babel/types" "^7.0.0"
+
+"@types/babel__template@*":
+  "integrity" "sha1-DIiN1ws+6e67bk8gDoCdoAdiYr4="
+  "resolved" "https://registry.nlark.com/@types/babel__template/download/@types/babel__template-7.4.0.tgz"
+  "version" "7.4.0"
+  dependencies:
+    "@babel/parser" "^7.1.0"
+    "@babel/types" "^7.0.0"
+
+"@types/babel__traverse@*", "@types/babel__traverse@^7.11.1":
+  "integrity" "sha1-ZU9sT2dWjiTCOzZ+lHCYxiBvpjk="
+  "resolved" "https://registry.nlark.com/@types/babel__traverse/download/@types/babel__traverse-7.11.1.tgz"
+  "version" "7.11.1"
+  dependencies:
+    "@babel/types" "^7.3.0"
+
+"@types/estree@^0.0.47":
+  "integrity" "sha1-16Udsg8GUO/sJM0EmU9SPZMXLtQ="
+  "resolved" "https://registry.nlark.com/@types/estree/download/@types/estree-0.0.47.tgz?cache=0&sync_timestamp=1621241091866&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Festree%2Fdownload%2F%40types%2Festree-0.0.47.tgz"
+  "version" "0.0.47"
 
 "@types/lodash@^4.14.165":
   "integrity" "sha1-g8IXaI8HpNnvjyij69HTGPb/TLs="
