@@ -1,6 +1,8 @@
 {
   "name": "vue-cbin-admin",
   "version": "0.0.0",
+  "repository": "https://github.com/c947694498/notes",
+  "author": "蔡蔡",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
