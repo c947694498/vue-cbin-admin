@@ -7,15 +7,17 @@ import { login } from './modules/login';
 export const router = createRouter({
   history: createWebHashHistory(),
   routes: [
-    // 错误
-    ...errors,
     // 登录
     ...login,
     // 主页
-    ...home
+    ...home,
+    // 错误
+    ...errors,
   ],
 })
 
 export const setupRouter = (app: App<Element>) => {
   app.use(router)
 }
+
+
