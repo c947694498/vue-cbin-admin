@@ -1,4 +1,8 @@
 // store 用户
+export interface userState {
+
+}
+
 const user = {
   namespace: true,
   state() {

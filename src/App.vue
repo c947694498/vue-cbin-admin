@@ -3,11 +3,14 @@
 </template>
 <script lang="ts">
 import { defineComponent } from "vue";
-import login from "./apis/modules/login";
-
+import { useRoute, useRouter } from "vue-router";
+import { useStore } from "./store";
 export default defineComponent({
   name: "App",
-  setup() {},
+  setup() {
+    const store = useStore()
+    useCommit().app.SET_VERSION()
+  },
 });
 </script>
 

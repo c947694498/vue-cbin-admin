@@ -1,9 +1,18 @@
-import { App } from "vue"
-import { createStore } from "vuex"
-import user from './modules/user'
-import app from './modules/app'
+import { App, InjectionKey } from "vue"
+import { Store, useStore as baseUseStore } from "vuex"
+import user, { userState } from './modules/user'
+import app, { AppState } from './modules/app'
+import { createStore } from "./utils/createStore"
 
-const store = createStore({
+export interface RootState {}
+export interface State {
+  app: AppState
+  user: userState
+}
+
+export const key: InjectionKey<Store<State>> = Symbol()
+
+const store = createStore<State>({
   modules: {
     app,
     user
@@ -11,5 +20,9 @@ const store = createStore({
 })
 
 export const setupStore = (app: App<Element>) => {
-  app.use(store)
+  app.use(store, key)
+}
+
+export function useStore() {
+  return baseUseStore(key)
 }
