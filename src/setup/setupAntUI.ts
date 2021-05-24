@@ -1,5 +1,5 @@
 import { App } from '@vue/runtime-core';
-import { Button, message } from 'ant-design-vue';
+import { message } from 'ant-design-vue';
 
 // 装载AntUI
 export function setupAntUI(app: App<Element>) {

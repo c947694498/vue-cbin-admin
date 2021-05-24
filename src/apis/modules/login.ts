@@ -10,6 +10,9 @@ interface ResData {
   info: object;
 }
 
+/**
+ * @description 登录
+ */
 export default function login(data: ReqData): StandResponse<ResData> {
   return request.post("login", data)
 }

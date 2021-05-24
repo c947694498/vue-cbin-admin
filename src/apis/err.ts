@@ -1,5 +1,5 @@
 /**
- * 接口错误合集
+ * @description 接口错误合集
  */
 const ERR = {
   SUCCUESS: 0,
